@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Capitais do Mundo</string>
+
+    <!-- Pergunta 01 - resp: Oslo - EditText -->
+    <string name="noruegaPergunta">01. A capital da Noruega é?</string>
+    <string name="noruegaRespDica">Tem 4 letras</string>
+    <string name="noruegaRespCerta">Oslo</string>
+
+    <!-- Pergunta 02 - resp: Suécia - EditText -->
+    <string name="sueciaPergunta">02. Estocolmo é a capital da:</string>
+    <string name="sueciaRespDica">S????a</string>
+    <string name="sueciaRespCerta">Suécia</string>
+
+    <!-- Pergunta 03 - resp: Islândia - EditText -->
+    <string name="islandiaPergunta">03. Reykjavik é a capital de que País?</string>
+    <string name="islandiaRespDica">Começa com a letra I</string>
+    <string name="islandiaRespCerta">Islândia</string>
+
+    <!-- Pergunta 04 - resp: Abu Dhabi - RadioButton -->
+    <string name="emiradosArabesPergunta">04. Qual a capital dos Emirados Árabes Unidos?</string>
+    <string name="emiradosArabesRespA">Riade</string>
+    <string name="emiradosArabesRespB">Dubai</string>
+    <string name="emiradosArabesRespC">Abu Dhabi</string>
+    <string name="emiradosArabesRespD">Marrocos</string>
+    <string name="emiradosArabesRespE">Árabia</string>
+
+    <!-- Pergunta 05 - resp: Camberra - RadioButton -->
+    <string name="australiaPergunta">05. Qual a capital da Austrália?</string>
+    <string name="australiaRespA">Melbourne</string>
+    <string name="australiaRespB">Perth</string>
+    <string name="australiaRespC">Brisbane</string>
+    <string name="australiaRespD">Sidney</string>
+    <string name="australiaRespE">Camberra</string>
+
+    <!-- Pergunta 06 - resp: Ancara - RadioButton -->
+    <string name="turquiaPergunta">06. Qual a capital da Turquia?</string>
+    <string name="turquiaRespA">Islamabad</string>
+    <string name="turquiaRespB">Ancara</string>
+    <string name="turquiaRespC">Istambul</string>
+    <string name="turquiaRespD">Turquemenistão</string>
+    <string name="turquiaRespE">Capadócia</string>
+
+    <!-- Pergunta 07 - resp: Bangladesh - RadioButton -->
+    <string name="bangladeshPergunta">07. Dhaka é a capital de qual destes países?</string>
+    <string name="bangladeshRespA">Vietnã</string>
+    <string name="bangladeshRespB">Myanmar</string>
+    <string name="bangladeshRespC">Tailândia</string>
+    <string name="bangladeshRespD">Bangladesh</string>
+    <string name="bangladeshRespE">Butão</string>
+
+    <!-- Pergunta 08 - resp: Ottawa - RadioButton -->
+    <string name="canadaPergunta">08. Qual é a capital do Canadá?</string>
+    <string name="canadaRespA">Varsóvia</string>
+    <string name="canadaRespB">Ottawa</string>
+    <string name="canadaRespC">Moscou</string>
+    <string name="canadaRespD">Berlim</string>
+    <string name="canadaRespE">Cairo</string>
+
+    <!-- Pergunta 09 - resp: Havana - RadioButton -->
+    <string name="cubaPergunta">09. Qual é a capital de Cuba?</string>
+    <string name="cubaRespA">Bangcoc</string>
+    <string name="cubaRespB">Croácia</string>
+    <string name="cubaRespC">Havana</string>
+    <string name="cubaRespD">Moscou</string>
+    <string name="cubaRespE">Kuala Lumpur</string>
+
+    <!-- Pergunta 10 - resp: Bruxelas - RadioButton -->
+    <string name="belgicaPergunta">10. Qual é a capital da Bélgica?</string>
+    <string name="belgicaRespA">Bruxelas</string>
+    <string name="belgicaRespB">Amsterdã</string>
+    <string name="belgicaRespC">Berlin</string>
+    <string name="belgicaRespD">Bangcoc</string>
+    <string name="belgicaRespE">Oslo</string>
+
+    <!-- Pergunta 11 - resp: Brasilia - RadioButton -->
+    <string name="brasilPergunta">11. Qual a capital do Brasil</string>
+    <string name="brasilRespA">São Paulo</string>
+    <string name="brasilRespB">Brasilia</string>
+    <string name="brasilRespC">Buenos Aires</string>
+    <string name="brasilRespD">Berlin</string>
+    <string name="brasilRespE">Brazil</string>
+
+    <!-- Pergunta 12 - resp: Paris - RadioButton -->
+    <string name="francaPergunta">12. A capital da França é?</string>
+    <string name="francaRespA">Cidade Luz</string>
+    <string name="francaRespB">Roma</string>
+    <string name="francaRespC">Madri</string>
+    <string name="francaRespD">Paris</string>
+    <string name="francaRespE">Berlin</string>
+
+
+    <!-- Pergunta 13 - resp: Cidade do Cabo, Pretória, Bloemfontein - CheckBox -->
+    <string name="africaDoSulPergunta">13. Quais são as capitais da África do Sul?</string>
+    <string name="africaDoSulRespA">Bloemfontein</string>
+    <string name="africaDoSulRespB">Cidade do Cabo</string>
+    <string name="africaDoSulRespC">Egito</string>
+    <string name="africaDoSulRespD">Bruxelas</string>
+    <string name="africaDoSulRespE">Pretória</string>
+
+    <!-- Pergunta 14 - resp: Cutaisi, Tiblíssi - CheckBox -->
+    <string name="gerogiaPergunta">14. Quais são as capitais da  Geórgia?</string>
+    <string name="gerogiaRespA">La Paz</string>
+    <string name="gerogiaRespB">Porto Novo</string>
+    <string name="gerogiaRespC">Tiblíssi</string>
+    <string name="gerogiaRespD">Amesterdão</string>
+    <string name="gerogiaRespE">Cutaisi</string>
+
+    <!-- Pergunta 15 - resp: Sucre, La Paz - CheckBox -->
+    <string name="boliviaPergunta">15. Quais são as capitais da  Bolivia?</string>
+    <string name="boliviaRespA">Quito</string>
+    <string name="boliviaRespB">La Paz</string>
+    <string name="boliviaRespC">Caracas</string>
+    <string name="boliviaRespD">Sucre</string>
+    <string name="boliviaRespE">Bogotá</string>
+
+
+
+</resources>

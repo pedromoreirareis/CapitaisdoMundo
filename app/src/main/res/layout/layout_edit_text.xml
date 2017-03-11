@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- EDIT TEXT -->
+
+    <!-- Pergunta 1 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/noruegaPergunta" />
+    <EditText
+        style="@style/edits"
+        android:hint="@string/noruegaRespDica"/>
+
+    <!-- Pergunta 2 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/sueciaPergunta"/>
+    <EditText
+        style="@style/edits"
+        android:hint="@string/sueciaRespDica"/>
+
+    <!-- Pergunta 3 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/islandiaPergunta" />
+    <EditText
+        style="@style/edits"
+        android:hint="@string/islandiaRespDica"/>
+
+</merge>

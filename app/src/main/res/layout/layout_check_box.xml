@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- CHECK BOX  -->
+
+    <!-- Pergunta 13 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/africaDoSulPergunta" />
+    <CheckBox
+        android:text="@string/africaDoSulRespA"
+        style="@style/check"
+        android:layout_marginTop="8dp"/>
+    <CheckBox
+        android:text="@string/africaDoSulRespB"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/africaDoSulRespC"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/africaDoSulRespD"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/africaDoSulRespE"
+        style="@style/check"/>
+
+    <!-- Pergunta 14 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/gerogiaPergunta"
+        android:layout_marginTop="8dp"/>
+    <CheckBox
+        android:text="@string/gerogiaRespA"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/gerogiaRespB"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/gerogiaRespC"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/gerogiaRespD"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/gerogiaRespE"
+        style="@style/check"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Pergunta 15 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/boliviaPergunta"
+        android:layout_marginTop="8dp"/>
+    <CheckBox
+        android:text="@string/boliviaRespA"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/boliviaRespB"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/boliviaRespC"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/boliviaRespD"
+        style="@style/check"/>
+    <CheckBox
+        android:text="@string/boliviaRespE"
+        style="@style/check"
+        android:layout_marginBottom="8dp"/>
+</merge>

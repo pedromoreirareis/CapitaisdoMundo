@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- RADIO BUTTON -->
+
+    <!-- Pergunta 4 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/emiradosArabesPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/emiradosArabesRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/emiradosArabesRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/emiradosArabesRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/emiradosArabesRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/emiradosArabesRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 5 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/australiaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/australiaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/australiaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/australiaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/australiaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/australiaRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 6 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/turquiaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/turquiaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/turquiaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/turquiaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/turquiaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/turquiaRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 7 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/bangladeshPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/bangladeshRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/bangladeshRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/bangladeshRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/bangladeshRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/bangladeshRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 8 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/canadaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/canadaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/canadaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/canadaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/canadaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/canadaRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 9 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/cubaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/cubaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/cubaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/cubaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/cubaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/cubaRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 10 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/belgicaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/belgicaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/belgicaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/belgicaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/belgicaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/belgicaRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 11 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/brasilPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/brasilRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/brasilRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/brasilRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/brasilRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/brasilRespE" />
+    </RadioGroup>
+
+    <!-- Pergunta 12 -->
+    <TextView
+        style="@style/perguntas"
+        android:text="@string/francaPergunta" />
+
+    <RadioGroup style="@style/radioGrupo">
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/francaRespA" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/francaRespB" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/francaRespC" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/francaRespD" />
+
+        <RadioButton
+            style="@style/radioBotao"
+            android:text="@string/francaRespE" />
+    </RadioGroup>
+
+</merge>
