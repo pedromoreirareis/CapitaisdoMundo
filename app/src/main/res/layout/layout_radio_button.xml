@@ -10,22 +10,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/emiradosArabes_RespA"
             style="@style/radioBotao"
             android:text="@string/emiradosArabesRespA" />
 
         <RadioButton
+            android:id="@+id/emiradosArabes_RespB"
             style="@style/radioBotao"
             android:text="@string/emiradosArabesRespB" />
 
         <RadioButton
+            android:id="@+id/emiradosArabes_RespC"
             style="@style/radioBotao"
             android:text="@string/emiradosArabesRespC" />
 
         <RadioButton
+            android:id="@+id/emiradosArabes_RespD"
             style="@style/radioBotao"
             android:text="@string/emiradosArabesRespD" />
 
         <RadioButton
+            android:id="@+id/emiradosArabes_RespE"
             style="@style/radioBotao"
             android:text="@string/emiradosArabesRespE" />
     </RadioGroup>
@@ -38,22 +43,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/australia_RespA"
             style="@style/radioBotao"
             android:text="@string/australiaRespA" />
 
         <RadioButton
+            android:id="@+id/australia_RespB"
             style="@style/radioBotao"
             android:text="@string/australiaRespB" />
 
         <RadioButton
+            android:id="@+id/australia_RespC"
             style="@style/radioBotao"
             android:text="@string/australiaRespC" />
 
         <RadioButton
+            android:id="@+id/australia_RespD"
             style="@style/radioBotao"
             android:text="@string/australiaRespD" />
 
         <RadioButton
+            android:id="@+id/australia_RespE"
             style="@style/radioBotao"
             android:text="@string/australiaRespE" />
     </RadioGroup>
@@ -66,22 +76,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/turquia_RespA"
             style="@style/radioBotao"
             android:text="@string/turquiaRespA" />
 
         <RadioButton
+            android:id="@+id/turquia_RespB"
             style="@style/radioBotao"
             android:text="@string/turquiaRespB" />
 
         <RadioButton
+            android:id="@+id/turquia_RespC"
             style="@style/radioBotao"
             android:text="@string/turquiaRespC" />
 
         <RadioButton
+            android:id="@+id/turquia_RespD"
             style="@style/radioBotao"
             android:text="@string/turquiaRespD" />
 
         <RadioButton
+            android:id="@+id/turquia_RespE"
             style="@style/radioBotao"
             android:text="@string/turquiaRespE" />
     </RadioGroup>
@@ -94,22 +109,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/Bangladesh_RespA"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespA" />
 
         <RadioButton
+            android:id="@+id/Bangladesh_RespB"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespB" />
 
         <RadioButton
+            android:id="@+id/Bangladesh_RespC"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespC" />
 
         <RadioButton
+            android:id="@+id/Bangladesh_RespD"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespD" />
 
         <RadioButton
+            android:id="@+id/Bangladesh_RespE"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespE" />
     </RadioGroup>
@@ -122,22 +142,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/canada_RespA"
             style="@style/radioBotao"
             android:text="@string/canadaRespA" />
 
         <RadioButton
+            android:id="@+id/canada_RespB"
             style="@style/radioBotao"
             android:text="@string/canadaRespB" />
 
         <RadioButton
+            android:id="@+id/canada_RespC"
             style="@style/radioBotao"
             android:text="@string/canadaRespC" />
 
         <RadioButton
+            android:id="@+id/canada_RespD"
             style="@style/radioBotao"
             android:text="@string/canadaRespD" />
 
         <RadioButton
+            android:id="@+id/canada_RespE"
             style="@style/radioBotao"
             android:text="@string/canadaRespE" />
     </RadioGroup>
@@ -150,22 +175,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/cuba_RespA"
             style="@style/radioBotao"
             android:text="@string/cubaRespA" />
 
         <RadioButton
+            android:id="@+id/cuba_RespB"
             style="@style/radioBotao"
             android:text="@string/cubaRespB" />
 
         <RadioButton
+            android:id="@+id/cuba_RespC"
             style="@style/radioBotao"
             android:text="@string/cubaRespC" />
 
         <RadioButton
+            android:id="@+id/cuba_RespD"
             style="@style/radioBotao"
             android:text="@string/cubaRespD" />
 
         <RadioButton
+            android:id="@+id/cuba_RespE"
             style="@style/radioBotao"
             android:text="@string/cubaRespE" />
     </RadioGroup>
@@ -178,22 +208,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/belgica_RespA"
             style="@style/radioBotao"
             android:text="@string/belgicaRespA" />
 
         <RadioButton
+            android:id="@+id/belgica_RespB"
             style="@style/radioBotao"
             android:text="@string/belgicaRespB" />
 
         <RadioButton
+            android:id="@+id/belgica_RespC"
             style="@style/radioBotao"
             android:text="@string/belgicaRespC" />
 
         <RadioButton
+            android:id="@+id/belgica_RespD"
             style="@style/radioBotao"
             android:text="@string/belgicaRespD" />
 
         <RadioButton
+            android:id="@+id/belgica_RespE"
             style="@style/radioBotao"
             android:text="@string/belgicaRespE" />
     </RadioGroup>
@@ -206,22 +241,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/brasil_RespA"
             style="@style/radioBotao"
             android:text="@string/brasilRespA" />
 
         <RadioButton
+            android:id="@+id/brasil_RespB"
             style="@style/radioBotao"
             android:text="@string/brasilRespB" />
 
         <RadioButton
+            android:id="@+id/brasil_RespC"
             style="@style/radioBotao"
             android:text="@string/brasilRespC" />
 
         <RadioButton
+            android:id="@+id/brasil_RespD"
             style="@style/radioBotao"
             android:text="@string/brasilRespD" />
 
         <RadioButton
+            android:id="@+id/brasil_RespE"
             style="@style/radioBotao"
             android:text="@string/brasilRespE" />
     </RadioGroup>
@@ -234,22 +274,27 @@
     <RadioGroup style="@style/radioGrupo">
 
         <RadioButton
+            android:id="@+id/franca_RespA"
             style="@style/radioBotao"
             android:text="@string/francaRespA" />
 
         <RadioButton
+            android:id="@+id/franca_RespB"
             style="@style/radioBotao"
             android:text="@string/francaRespB" />
 
         <RadioButton
+            android:id="@+id/franca_RespC"
             style="@style/radioBotao"
             android:text="@string/francaRespC" />
 
         <RadioButton
+            android:id="@+id/franca_RespD"
             style="@style/radioBotao"
             android:text="@string/francaRespD" />
 
         <RadioButton
+            android:id="@+id/franca_RespE"
             style="@style/radioBotao"
             android:text="@string/francaRespE" />
     </RadioGroup>

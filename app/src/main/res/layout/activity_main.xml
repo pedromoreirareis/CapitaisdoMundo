@@ -10,17 +10,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/layout_edit_text"/>
+        <include layout="@layout/layout_edit_text" />
 
-        <include layout="@layout/layout_radio_button"/>
+        <include layout="@layout/layout_radio_button" />
 
-        <include layout="@layout/layout_check_box"/>
+        <include layout="@layout/layout_check_box" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="Conferir Respostas"/>
+            android:text="Conferir Respostas" />
     </LinearLayout>
 </ScrollView>

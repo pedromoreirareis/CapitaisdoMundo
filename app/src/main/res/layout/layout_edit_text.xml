@@ -6,24 +6,30 @@
     <TextView
         style="@style/perguntas"
         android:text="@string/noruegaPergunta" />
+
     <EditText
+        android:id="@+id/noruega_Resp"
         style="@style/edits"
-        android:hint="@string/noruegaRespDica"/>
+        android:hint="@string/noruegaRespDica" />
 
     <!-- Pergunta 2 -->
     <TextView
         style="@style/perguntas"
-        android:text="@string/sueciaPergunta"/>
+        android:text="@string/sueciaPergunta" />
+
     <EditText
+        android:id="@+id/suecia_Resp"
         style="@style/edits"
-        android:hint="@string/sueciaRespDica"/>
+        android:hint="@string/sueciaRespDica" />
 
     <!-- Pergunta 3 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/islandiaPergunta" />
+
     <EditText
+        android:id="@+id/islandia_Resp"
         style="@style/edits"
-        android:hint="@string/islandiaRespDica"/>
+        android:hint="@string/islandiaRespDica" />
 
 </merge>

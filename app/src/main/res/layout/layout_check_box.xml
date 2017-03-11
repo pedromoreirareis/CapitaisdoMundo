@@ -6,64 +6,94 @@
     <TextView
         style="@style/perguntas"
         android:text="@string/africaDoSulPergunta" />
+
     <CheckBox
-        android:text="@string/africaDoSulRespA"
+        android:id="@+id/africaDoSul_RespA"
         style="@style/check"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:text="@string/africaDoSulRespA" />
+
     <CheckBox
-        android:text="@string/africaDoSulRespB"
-        style="@style/check"/>
+        android:id="@+id/africaDoSul_RespB"
+        style="@style/check"
+        android:text="@string/africaDoSulRespB" />
+
     <CheckBox
-        android:text="@string/africaDoSulRespC"
-        style="@style/check"/>
+        android:id="@+id/africaDoSul_RespC"
+        style="@style/check"
+        android:text="@string/africaDoSulRespC" />
+
     <CheckBox
-        android:text="@string/africaDoSulRespD"
-        style="@style/check"/>
+        android:id="@+id/africaDoSul_RespD"
+        style="@style/check"
+        android:text="@string/africaDoSulRespD" />
+
     <CheckBox
-        android:text="@string/africaDoSulRespE"
-        style="@style/check"/>
+        android:id="@+id/africaDoSul_RespE"
+        style="@style/check"
+        android:text="@string/africaDoSulRespE" />
 
     <!-- Pergunta 14 -->
     <TextView
         style="@style/perguntas"
-        android:text="@string/gerogiaPergunta"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:text="@string/gerogiaPergunta" />
+
     <CheckBox
-        android:text="@string/gerogiaRespA"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/gerogiaRespB"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/gerogiaRespC"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/gerogiaRespD"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/gerogiaRespE"
+        android:id="@+id/georgia_RespA"
         style="@style/check"
-        android:layout_marginBottom="8dp"/>
+        android:text="@string/gerogiaRespA" />
+
+    <CheckBox
+        android:id="@+id/georgia_RespB"
+        style="@style/check"
+        android:text="@string/gerogiaRespB" />
+
+    <CheckBox
+        android:id="@+id/georgia_RespC"
+        style="@style/check"
+        android:text="@string/gerogiaRespC" />
+
+    <CheckBox
+        android:id="@+id/georgia_RespD"
+        style="@style/check"
+        android:text="@string/gerogiaRespD" />
+
+    <CheckBox
+        android:id="@+id/georgia_RespE"
+        style="@style/check"
+        android:layout_marginBottom="8dp"
+        android:text="@string/gerogiaRespE" />
 
     <!-- Pergunta 15 -->
     <TextView
         style="@style/perguntas"
-        android:text="@string/boliviaPergunta"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:text="@string/boliviaPergunta" />
+
     <CheckBox
-        android:text="@string/boliviaRespA"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/boliviaRespB"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/boliviaRespC"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/boliviaRespD"
-        style="@style/check"/>
-    <CheckBox
-        android:text="@string/boliviaRespE"
+        android:id="@+id/bolivia_RespA"
         style="@style/check"
-        android:layout_marginBottom="8dp"/>
+        android:text="@string/boliviaRespA" />
+
+    <CheckBox
+        android:id="@+id/bolivia_RespB"
+        style="@style/check"
+        android:text="@string/boliviaRespB" />
+
+    <CheckBox
+        android:id="@+id/bolivia_RespC"
+        style="@style/check"
+        android:text="@string/boliviaRespC" />
+
+    <CheckBox
+        android:id="@+id/bolivia_RespD"
+        style="@style/check"
+        android:text="@string/boliviaRespD" />
+
+    <CheckBox
+        android:id="@+id/bolivia_RespE"
+        style="@style/check"
+        android:layout_marginBottom="8dp"
+        android:text="@string/boliviaRespE" />
 </merge>
