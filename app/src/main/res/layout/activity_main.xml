@@ -16,11 +16,21 @@
 
         <include layout="@layout/layout_check_box" />
 
-        <Button
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:text="Conferir Respostas" />
+            android:background="#EF6C00">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="#2979FF"
+                android:onClick="butaoConferir"
+                android:text="Conferir Respostas"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
     </LinearLayout>
 </ScrollView>

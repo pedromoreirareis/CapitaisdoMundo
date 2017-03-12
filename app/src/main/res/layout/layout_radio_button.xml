@@ -7,7 +7,9 @@
         style="@style/perguntas"
         android:text="@string/emiradosArabesPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/emiradosArabes_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/emiradosArabes_RespA"
@@ -40,7 +42,9 @@
         style="@style/perguntas"
         android:text="@string/australiaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/australia_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/australia_RespA"
@@ -73,7 +77,9 @@
         style="@style/perguntas"
         android:text="@string/turquiaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/turquia_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/turquia_RespA"
@@ -106,30 +112,32 @@
         style="@style/perguntas"
         android:text="@string/bangladeshPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/bangladesh_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
-            android:id="@+id/Bangladesh_RespA"
+            android:id="@+id/bangladesh_RespA"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespA" />
 
         <RadioButton
-            android:id="@+id/Bangladesh_RespB"
+            android:id="@+id/bangladesh_RespB"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespB" />
 
         <RadioButton
-            android:id="@+id/Bangladesh_RespC"
+            android:id="@+id/bangladesh_RespC"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespC" />
 
         <RadioButton
-            android:id="@+id/Bangladesh_RespD"
+            android:id="@+id/bangladesh_RespD"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespD" />
 
         <RadioButton
-            android:id="@+id/Bangladesh_RespE"
+            android:id="@+id/bangladesh_RespE"
             style="@style/radioBotao"
             android:text="@string/bangladeshRespE" />
     </RadioGroup>
@@ -139,7 +147,9 @@
         style="@style/perguntas"
         android:text="@string/canadaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/canada_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/canada_RespA"
@@ -172,7 +182,9 @@
         style="@style/perguntas"
         android:text="@string/cubaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/cuba_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/cuba_RespA"
@@ -205,7 +217,9 @@
         style="@style/perguntas"
         android:text="@string/belgicaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/belgica_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/belgica_RespA"
@@ -238,7 +252,9 @@
         style="@style/perguntas"
         android:text="@string/brasilPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/brasil_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/brasil_RespA"
@@ -271,7 +287,9 @@
         style="@style/perguntas"
         android:text="@string/francaPergunta" />
 
-    <RadioGroup style="@style/radioGrupo">
+    <RadioGroup
+        android:id="@+id/franca_RadioGroup"
+        style="@style/radioGrupo">
 
         <RadioButton
             android:id="@+id/franca_RespA"

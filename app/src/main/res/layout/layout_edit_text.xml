@@ -10,7 +10,9 @@
     <EditText
         android:id="@+id/noruega_Resp"
         style="@style/edits"
-        android:hint="@string/noruegaRespDica" />
+        android:hint="@string/noruegaRespDica"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapWords|textPhonetic" />
 
     <!-- Pergunta 2 -->
     <TextView
@@ -20,7 +22,9 @@
     <EditText
         android:id="@+id/suecia_Resp"
         style="@style/edits"
-        android:hint="@string/sueciaRespDica" />
+        android:hint="@string/sueciaRespDica"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapWords|textPhonetic" />
 
     <!-- Pergunta 3 -->
     <TextView
@@ -30,6 +34,8 @@
     <EditText
         android:id="@+id/islandia_Resp"
         style="@style/edits"
-        android:hint="@string/islandiaRespDica" />
+        android:hint="@string/islandiaRespDica"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapWords|textPhonetic" />
 
 </merge>
