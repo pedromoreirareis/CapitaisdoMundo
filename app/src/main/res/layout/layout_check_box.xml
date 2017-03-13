@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- CHECK BOX  -->
 
-    <!-- Pergunta 13 -->
+    <!-- Pergunta 09 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/africaDoSulPergunta" />
@@ -33,7 +33,7 @@
         style="@style/check"
         android:text="@string/africaDoSulRespE" />
 
-    <!-- Pergunta 14 -->
+    <!-- Pergunta 10 -->
     <TextView
         style="@style/perguntas"
         android:layout_marginTop="8dp"
@@ -65,35 +65,4 @@
         android:layout_marginBottom="8dp"
         android:text="@string/gerogiaRespE" />
 
-    <!-- Pergunta 15 -->
-    <TextView
-        style="@style/perguntas"
-        android:layout_marginTop="8dp"
-        android:text="@string/boliviaPergunta" />
-
-    <CheckBox
-        android:id="@+id/bolivia_RespA"
-        style="@style/check"
-        android:text="@string/boliviaRespA" />
-
-    <CheckBox
-        android:id="@+id/bolivia_RespB"
-        style="@style/check"
-        android:text="@string/boliviaRespB" />
-
-    <CheckBox
-        android:id="@+id/bolivia_RespC"
-        style="@style/check"
-        android:text="@string/boliviaRespC" />
-
-    <CheckBox
-        android:id="@+id/bolivia_RespD"
-        style="@style/check"
-        android:text="@string/boliviaRespD" />
-
-    <CheckBox
-        android:id="@+id/bolivia_RespE"
-        style="@style/check"
-        android:layout_marginBottom="8dp"
-        android:text="@string/boliviaRespE" />
 </merge>

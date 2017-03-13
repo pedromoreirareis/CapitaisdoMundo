@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- RADIO BUTTON -->
 
-    <!-- Pergunta 4 -->
+    <!-- Pergunta 03 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/emiradosArabesPergunta" />
@@ -37,7 +37,7 @@
             android:text="@string/emiradosArabesRespE" />
     </RadioGroup>
 
-    <!-- Pergunta 5 -->
+    <!-- Pergunta 04 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/australiaPergunta" />
@@ -72,7 +72,7 @@
             android:text="@string/australiaRespE" />
     </RadioGroup>
 
-    <!-- Pergunta 6 -->
+    <!-- Pergunta 05 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/turquiaPergunta" />
@@ -107,42 +107,8 @@
             android:text="@string/turquiaRespE" />
     </RadioGroup>
 
-    <!-- Pergunta 7 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/bangladeshPergunta" />
 
-    <RadioGroup
-        android:id="@+id/bangladesh_RadioGroup"
-        style="@style/radioGrupo">
-
-        <RadioButton
-            android:id="@+id/bangladesh_RespA"
-            style="@style/radioBotao"
-            android:text="@string/bangladeshRespA" />
-
-        <RadioButton
-            android:id="@+id/bangladesh_RespB"
-            style="@style/radioBotao"
-            android:text="@string/bangladeshRespB" />
-
-        <RadioButton
-            android:id="@+id/bangladesh_RespC"
-            style="@style/radioBotao"
-            android:text="@string/bangladeshRespC" />
-
-        <RadioButton
-            android:id="@+id/bangladesh_RespD"
-            style="@style/radioBotao"
-            android:text="@string/bangladeshRespD" />
-
-        <RadioButton
-            android:id="@+id/bangladesh_RespE"
-            style="@style/radioBotao"
-            android:text="@string/bangladeshRespE" />
-    </RadioGroup>
-
-    <!-- Pergunta 8 -->
+    <!-- Pergunta 06 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/canadaPergunta" />
@@ -177,42 +143,8 @@
             android:text="@string/canadaRespE" />
     </RadioGroup>
 
-    <!-- Pergunta 9 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/cubaPergunta" />
 
-    <RadioGroup
-        android:id="@+id/cuba_RadioGroup"
-        style="@style/radioGrupo">
-
-        <RadioButton
-            android:id="@+id/cuba_RespA"
-            style="@style/radioBotao"
-            android:text="@string/cubaRespA" />
-
-        <RadioButton
-            android:id="@+id/cuba_RespB"
-            style="@style/radioBotao"
-            android:text="@string/cubaRespB" />
-
-        <RadioButton
-            android:id="@+id/cuba_RespC"
-            style="@style/radioBotao"
-            android:text="@string/cubaRespC" />
-
-        <RadioButton
-            android:id="@+id/cuba_RespD"
-            style="@style/radioBotao"
-            android:text="@string/cubaRespD" />
-
-        <RadioButton
-            android:id="@+id/cuba_RespE"
-            style="@style/radioBotao"
-            android:text="@string/cubaRespE" />
-    </RadioGroup>
-
-    <!-- Pergunta 10 -->
+    <!-- Pergunta 07 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/belgicaPergunta" />
@@ -247,42 +179,8 @@
             android:text="@string/belgicaRespE" />
     </RadioGroup>
 
-    <!-- Pergunta 11 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/brasilPergunta" />
 
-    <RadioGroup
-        android:id="@+id/brasil_RadioGroup"
-        style="@style/radioGrupo">
-
-        <RadioButton
-            android:id="@+id/brasil_RespA"
-            style="@style/radioBotao"
-            android:text="@string/brasilRespA" />
-
-        <RadioButton
-            android:id="@+id/brasil_RespB"
-            style="@style/radioBotao"
-            android:text="@string/brasilRespB" />
-
-        <RadioButton
-            android:id="@+id/brasil_RespC"
-            style="@style/radioBotao"
-            android:text="@string/brasilRespC" />
-
-        <RadioButton
-            android:id="@+id/brasil_RespD"
-            style="@style/radioBotao"
-            android:text="@string/brasilRespD" />
-
-        <RadioButton
-            android:id="@+id/brasil_RespE"
-            style="@style/radioBotao"
-            android:text="@string/brasilRespE" />
-    </RadioGroup>
-
-    <!-- Pergunta 12 -->
+    <!-- Pergunta 08 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/francaPergunta" />

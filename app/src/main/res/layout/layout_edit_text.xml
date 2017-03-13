@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- EDIT TEXT -->
 
-    <!-- Pergunta 1 -->
+    <!-- Pergunta 01 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/noruegaPergunta" />
@@ -14,7 +14,7 @@
         android:imeOptions="actionDone"
         android:inputType="text|textCapWords|textPhonetic" />
 
-    <!-- Pergunta 2 -->
+    <!-- Pergunta 02 -->
     <TextView
         style="@style/perguntas"
         android:text="@string/sueciaPergunta" />
@@ -25,17 +25,4 @@
         android:hint="@string/sueciaRespDica"
         android:imeOptions="actionDone"
         android:inputType="text|textCapWords|textPhonetic" />
-
-    <!-- Pergunta 3 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/islandiaPergunta" />
-
-    <EditText
-        android:id="@+id/islandia_Resp"
-        style="@style/edits"
-        android:hint="@string/islandiaRespDica"
-        android:imeOptions="actionDone"
-        android:inputType="text|textCapWords|textPhonetic" />
-
 </merge>
