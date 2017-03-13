@@ -1,18 +1,14 @@
 package com.pedromoreirareisgmail.capitaisdomundo;
 
 
+import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
-
 import android.widget.RadioGroup;
-import android.widget.Toast;
-
-
 import java.text.NumberFormat;
 
 
@@ -70,9 +66,14 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder mensagem = new AlertDialog.Builder(MainActivity.this);
         mensagem.setTitle("RESULTADO");
         mensagem.setMessage(mTotalDisplay);
+        mensagem.setCancelable(false);
+        mensagem.setPositiveButton("REINICIAR", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                zerarRespostas();
+            }
+        });
         mensagem.create().show();
-
-        zerarRespostas();
     }
 
     private void zerarRespostas() {
@@ -92,6 +93,35 @@ public class MainActivity extends AppCompatActivity {
         mBelgica.clearCheck();
         mBrasil.clearCheck();
         mfranca.clearCheck();
+
+        mAfricaDoSulA.setChecked(false);
+        mAfricaDoSulB.setChecked(false);
+        mAfricaDoSulE.setChecked(false);
+        mGeorgiaC.setChecked(false);
+        mGeorgiaE.setChecked(false);
+        mBoliviaB.setChecked(false);
+        mBoliviaD.setChecked(false);
+
+        CheckBox mAfricaDoSulC = (CheckBox) findViewById(R.id.africaDoSul_RespC);
+        CheckBox mAfricaDoSulD = (CheckBox) findViewById(R.id.africaDoSul_RespD);
+        mAfricaDoSulC.setChecked(false);
+        mAfricaDoSulD.setChecked(false);
+
+        CheckBox mGeorgiaA = (CheckBox) findViewById(R.id.georgia_RespA);
+        CheckBox mGeorgiaB = (CheckBox) findViewById(R.id.georgia_RespB);
+        CheckBox mGeorgiaD = (CheckBox) findViewById(R.id.georgia_RespD);
+        mGeorgiaA.setChecked(false);
+        mGeorgiaB.setChecked(false);
+        mGeorgiaD.setChecked(false);
+
+        CheckBox mBoliviaA = (CheckBox) findViewById(R.id.bolivia_RespA);
+        CheckBox mBoliviaC = (CheckBox) findViewById(R.id.bolivia_RespC);
+        CheckBox mBoliviaE = (CheckBox) findViewById(R.id.bolivia_RespE);
+        mBoliviaA.setChecked(false);
+        mBoliviaC.setChecked(false);
+        mBoliviaE.setChecked(false);
+
+        mTexto_noruega.requestFocus();
     }
 
     private void confereEdits() {
@@ -200,15 +230,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void confereCheck() {
-        CheckBox mAfricaDoSulA = (CheckBox) findViewById(R.id.africaDoSul_RespA);
-        CheckBox mAfricaDoSulB = (CheckBox) findViewById(R.id.africaDoSul_RespB);
-        CheckBox mAfricaDoSulE = (CheckBox) findViewById(R.id.africaDoSul_RespE);
+        mAfricaDoSulA = (CheckBox) findViewById(R.id.africaDoSul_RespA);
+        mAfricaDoSulB = (CheckBox) findViewById(R.id.africaDoSul_RespB);
+        mAfricaDoSulE = (CheckBox) findViewById(R.id.africaDoSul_RespE);
 
-        CheckBox mGeorgiaC = (CheckBox) findViewById(R.id.georgia_RespC);
-        CheckBox mGeorgiaE = (CheckBox) findViewById(R.id.georgia_RespE);
+        mGeorgiaC = (CheckBox) findViewById(R.id.georgia_RespC);
+        mGeorgiaE = (CheckBox) findViewById(R.id.georgia_RespE);
 
-        CheckBox mBoliviaB = (CheckBox) findViewById(R.id.bolivia_RespB);
-        CheckBox mBoliviaD = (CheckBox) findViewById(R.id.bolivia_RespD);
+        mBoliviaB = (CheckBox) findViewById(R.id.bolivia_RespB);
+        mBoliviaD = (CheckBox) findViewById(R.id.bolivia_RespD);
 
         if (mAfricaDoSulA.isChecked() && mAfricaDoSulB.isChecked() && mAfricaDoSulE.isChecked()) {
             mCerto++;
