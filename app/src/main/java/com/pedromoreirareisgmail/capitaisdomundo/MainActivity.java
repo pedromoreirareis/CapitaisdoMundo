@@ -125,13 +125,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void confereEdits() {
-        String respCerta = "";
-        String respUser = "";
+        String respCerta;
+        String respUser;
 
         mTexto_noruega = (EditText) findViewById(R.id.noruega_Resp);
 
         respUser = mTexto_noruega.getText().toString().toUpperCase().trim();
-        if (respUser != null && !respUser.equals("")) {
+        if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.noruegaRespCerta).toUpperCase();
 
             if (respUser.equals(respCerta)) {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         mTexto_suecia = (EditText) findViewById(R.id.suecia_Resp);
 
         respUser = mTexto_suecia.getText().toString().toUpperCase().trim();
-        if (respUser != null && !respUser.equals("")) {
+        if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.sueciaRespCerta).toUpperCase();
 
             if (respUser.equals(respCerta) || respUser.equals("SUECIA")) {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
         mTexto_islandia = (EditText) findViewById(R.id.islandia_Resp);
 
         respUser = mTexto_islandia.getText().toString().toUpperCase().trim();
-        if (respUser != null && !respUser.equals("")) {
+        if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.islandiaRespCerta).toUpperCase();
 
             if (respUser.equals(respCerta) || respUser.equals("ISLANDIA")) {
