@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Capitais do Mundo</string>
 
+    <string name="butConferir">Conferir Respostas</string>
+
     <!-- Pergunta 01 - resp: Oslo - EditText -->
     <string name="noruegaPergunta">01. A capital da Noruega é?</string>
     <string name="noruegaRespDica">Tem 4 letras</string>
@@ -12,7 +14,7 @@
     <string name="sueciaRespCerta">Suécia</string>
 
     <!-- Pergunta 03 - resp: Abu Dhabi - RadioButton -->
-    <string name="emiradosArabesPergunta">03. Qual a capital dos Emirados Árabes Unidos?</string>
+    <string name="emiradosArabesPergunta">03. A capital dos Emirados Árabes Unidos?</string>
     <string name="emiradosArabesRespA">Riade</string>
     <string name="emiradosArabesRespB">Dubai</string>
     <string name="emiradosArabesRespC">Abu Dhabi</string>

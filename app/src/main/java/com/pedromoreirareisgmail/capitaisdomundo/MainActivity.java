@@ -1,60 +1,70 @@
 package com.pedromoreirareisgmail.capitaisdomundo;
 
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+
 import java.text.NumberFormat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private static final NumberFormat PERCENT_FORMAT = NumberFormat.getPercentInstance();
-    private static final double QUANT_PERGUNTAS = 10;
+    private static final int QUANT_PERGUNTAS = 10;
     private int mCerto = 0;
+
+    private Button.OnClickListener clickButConferir = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String mTotalDisplay;
+
+            confereEdits();
+            confereRadios();
+            confereCheck();
+
+            mTotalDisplay = "Respostas corretas:  " + String.valueOf(mCerto) + "/" + QUANT_PERGUNTAS +
+                    "\n" +
+                    "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) + " do total.";
+
+            AlertDialog.Builder mensagem = new AlertDialog.Builder(MainActivity.this);
+            mensagem.setTitle("RESULTADO");
+            mensagem.setMessage(mTotalDisplay);
+            mensagem.setCancelable(false);
+            mensagem.setPositiveButton("REINICIAR", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    zerarRespostas();
+                }
+            });
+            mensagem.create().show();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void butaoConferir(View view) {
-        String mTotalDisplay;
-
-        confereEdits();
-        confereRadios();
-        confereCheck();
-
-        mTotalDisplay = "Respostas corretas:  " + String.valueOf(mCerto) + "/" + QUANT_PERGUNTAS +
-                "\n" + PERCENT_FORMAT.format(mCerto / QUANT_PERGUNTAS) + " do total.";
-
-        AlertDialog.Builder mensagem = new AlertDialog.Builder(MainActivity.this);
-        mensagem.setTitle("RESULTADO");
-        mensagem.setMessage(mTotalDisplay);
-        mensagem.setCancelable(false);
-        mensagem.setPositiveButton("REINICIAR", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                zerarRespostas();
-            }
-        });
-        mensagem.create().show();
+        Button butConferir = (Button) findViewById(R.id.but_conferir);
+        butConferir.setOnClickListener(clickButConferir);
     }
 
     private void zerarRespostas() {
         mCerto = 0;
 
         LinearLayout componentes = (LinearLayout) findViewById(R.id.linear_componentes);
-        desmarcarRadioGroup(componentes);
-        desmarcarEdiText(componentes);
-        desmarcarCheckBox(componentes);
+        LimparEditsChecksRadios(componentes);
+
     }
 
     private void confereEdits() {
@@ -146,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (africaDoSulA.isChecked() && africaDoSulB.isChecked() &&
                 africaDoSulE.isChecked() && !africaDoSulC.isChecked() &&
-                africaDoSulD.isChecked()) {
+                !africaDoSulD.isChecked()) {
             mCerto++;
         }
 
@@ -157,29 +167,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void desmarcarCheckBox(ViewGroup vg) {
+    private void LimparEditsChecksRadios(ViewGroup vg) {
         for (int i = 0; i < vg.getChildCount(); i++) {
-            View v = vg.getChildAt(i);
-            if (v instanceof CheckBox) {
-                ((CheckBox) v).setChecked(false);
-            }
-        }
-    }
 
-    private void desmarcarRadioGroup(ViewGroup vg) {
-        for (int i = 0; i < vg.getChildCount(); i++) {
             View v = vg.getChildAt(i);
+
+            if (v instanceof EditText) {
+                ((EditText) v).setText("");
+            }
             if (v instanceof RadioGroup) {
                 ((RadioGroup) v).clearCheck();
             }
-        }
-    }
-
-    private void desmarcarEdiText(ViewGroup vg) {
-        for (int i = 0; i < vg.getChildCount(); i++) {
-            View v = vg.getChildAt(i);
-            if (v instanceof EditText) {
-                ((EditText) v).setText("");
+            if (v instanceof CheckBox) {
+                ((CheckBox) v).setChecked(false);
             }
         }
     }
