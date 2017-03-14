@@ -3,10 +3,9 @@ package com.pedromoreirareisgmail.capitaisdomundo;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -22,25 +21,29 @@ public class MainActivity extends Activity {
     private static final NumberFormat PERCENT_FORMAT = NumberFormat.getPercentInstance();
     private static final int QUANT_PERGUNTAS = 10;
     private int mCerto = 0;
-
+    /**
+     * Inicia o procedimento para verificar as respostas corretas.
+     * Após a verificação, chama uma mensagem com o resultado final, e reiinicia o quiz.
+     */
     private Button.OnClickListener clickButConferir = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
             String mTotalDisplay;
 
-            confereEdits();
-            confereRadios();
-            confereCheck();
+            conferirEdits();
+            conferirRadios();
+            conferirCheck();
 
-            mTotalDisplay = "Respostas corretas:  " + String.valueOf(mCerto) + "/" + QUANT_PERGUNTAS +
+            mTotalDisplay = getResources().getString(R.string.msgRespostas) + " " + String.valueOf(mCerto)
+                    + getResources().getString(R.string.msgBarra) + QUANT_PERGUNTAS +
                     "\n" +
-                    "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) + " do total.";
+                    "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) + " " + getResources().getString(R.string.msgDoTotal);
 
             AlertDialog.Builder mensagem = new AlertDialog.Builder(MainActivity.this);
-            mensagem.setTitle("RESULTADO");
+            mensagem.setTitle(getResources().getString(R.string.msgResultado));
             mensagem.setMessage(mTotalDisplay);
             mensagem.setCancelable(false);
-            mensagem.setPositiveButton("REINICIAR", new DialogInterface.OnClickListener() {
+            mensagem.setPositiveButton(getResources().getString(R.string.msgReiniciar), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     zerarRespostas();
@@ -59,15 +62,11 @@ public class MainActivity extends Activity {
         butConferir.setOnClickListener(clickButConferir);
     }
 
-    private void zerarRespostas() {
-        mCerto = 0;
-
-        LinearLayout componentes = (LinearLayout) findViewById(R.id.linear_componentes);
-        LimparEditsChecksRadios(componentes);
-
-    }
-
-    private void confereEdits() {
+    /**
+     * Confere se a resposta dada no Edit esta correta ou não
+     * Atribui 1 ponto se estiver correta.
+     */
+    private void conferirEdits() {
         String respCerta;
         String respUser;
 
@@ -90,13 +89,17 @@ public class MainActivity extends Activity {
         if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.sueciaRespCerta).toUpperCase();
 
-            if (respUser.equals(respCerta) || respUser.equals("SUECIA")) {
+            if (respUser.equals(respCerta) || respUser.equals(getResources().getString(R.string.respSuecia))) {
                 mCerto++;
             }
         }
     }
 
-    private void confereRadios() {
+    /**
+     * Confere se a resposta dada no RadioButton esta correta ou não
+     * Atribui 1 ponto se estiver correta.
+     */
+    private void conferirRadios() {
 
         RadioGroup mEmiradoArabes = (RadioGroup) findViewById(R.id.emiradosArabes_RadioGroup);
         switch (mEmiradoArabes.getCheckedRadioButtonId()) {
@@ -141,7 +144,11 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void confereCheck() {
+    /**
+     * Confere se a resposta dada no CheckBox esta correta ou não
+     * Atribui 1 ponto se estiver correta.
+     */
+    private void conferirCheck() {
         CheckBox africaDoSulA = (CheckBox) findViewById(R.id.africaDoSul_RespA);
         CheckBox africaDoSulB = (CheckBox) findViewById(R.id.africaDoSul_RespB);
         CheckBox africaDoSulC = (CheckBox) findViewById(R.id.africaDoSul_RespC);
@@ -167,6 +174,11 @@ public class MainActivity extends Activity {
         }
     }
 
+    /**
+     * Faz a limpeza das respostas dadas. Limpa os Edits, desmarca os RadioButton e CheckBox.
+     *
+     * @param vg é o ViewGroup(Pai) que contém os view(filhos) a serem verificados.
+     */
     private void LimparEditsChecksRadios(ViewGroup vg) {
         for (int i = 0; i < vg.getChildCount(); i++) {
 
@@ -182,5 +194,16 @@ public class MainActivity extends Activity {
                 ((CheckBox) v).setChecked(false);
             }
         }
+    }
+
+    /**
+     * Zera o resultado final.
+     * Solicita a limpeza dos Edits, RadioButtons e CheckBoxes.
+     */
+    private void zerarRespostas() {
+        mCerto = 0;
+
+        LinearLayout componentes = (LinearLayout) findViewById(R.id.linear_componentes);
+        LimparEditsChecksRadios(componentes);
     }
 }

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Capitais do Mundo</string>
 
+    <!-- Botão conferir -->
     <string name="butConferir">Conferir Respostas</string>
 
     <!-- Pergunta 01 - resp: Oslo - EditText -->
@@ -79,4 +80,13 @@
     <string name="gerogiaRespD">Amesterdão</string>
     <string name="gerogiaRespE">Cutaisi</string>
 
+    <!-- Strings utilizadas na mensagem de resultado -->
+    <string name="msgResultado">RESULTADO</string>
+    <string name="msgRespostas">Respostas corretas:</string>
+    <string name="msgBarra">/</string>
+    <string name="msgDoTotal"> do total.</string>
+    <string name="msgReiniciar">REINICIAR</string>
+
+    <!-- Strings utilizadas no Codigo -->
+    <string name="respSuecia">SUECIA</string>
 </resources>
