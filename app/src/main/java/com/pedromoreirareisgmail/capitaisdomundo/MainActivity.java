@@ -3,7 +3,6 @@ package com.pedromoreirareisgmail.capitaisdomundo;
 
 import android.app.Activity;
 import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
@@ -21,35 +20,15 @@ public class MainActivity extends Activity {
     private static final NumberFormat PERCENT_FORMAT = NumberFormat.getPercentInstance();
     private static final int QUANT_PERGUNTAS = 10;
     private int mCerto = 0;
-    /**
-     * Inicia o procedimento para verificar as respostas corretas.
-     * Após a verificação, chama uma mensagem com o resultado final, e reiinicia o quiz.
-     */
+
     private Button.OnClickListener clickButConferir = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String mTotalDisplay;
-
             conferirEdits();
             conferirRadios();
             conferirCheck();
 
-            mTotalDisplay = getResources().getString(R.string.msgRespostas) + " " + String.valueOf(mCerto)
-                    + getResources().getString(R.string.msgBarra) + QUANT_PERGUNTAS +
-                    "\n" +
-                    "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) + " " + getResources().getString(R.string.msgDoTotal);
-
-            AlertDialog.Builder mensagem = new AlertDialog.Builder(MainActivity.this);
-            mensagem.setTitle(getResources().getString(R.string.msgResultado));
-            mensagem.setMessage(mTotalDisplay);
-            mensagem.setCancelable(false);
-            mensagem.setPositiveButton(getResources().getString(R.string.msgReiniciar), new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    zerarRespostas();
-                }
-            });
-            mensagem.create().show();
+            mostarMensagemResposta(gerarMensagemResposta());
         }
     };
 
@@ -62,19 +41,42 @@ public class MainActivity extends Activity {
         butConferir.setOnClickListener(clickButConferir);
     }
 
-    /**
-     * Confere se a resposta dada no Edit esta correta ou não
-     * Atribui 1 ponto se estiver correta.
-     */
+    private String gerarMensagemResposta() {
+        String totalDisplay;
+
+        totalDisplay = getResources().getString(R.string.msgRespostas) + "  " + String.valueOf(mCerto)
+                + getResources().getString(R.string.msgBarra) + QUANT_PERGUNTAS +
+                "\n" +
+                "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) +
+                "  " + getResources().getString(R.string.msgDoTotal);
+
+        return totalDisplay;
+    }
+
+    private void mostarMensagemResposta(String mensagem) {
+
+        AlertDialog.Builder alerta = new AlertDialog.Builder(MainActivity.this);
+
+        alerta.setTitle(getResources().getString(R.string.msgResultado));
+        alerta.setMessage(mensagem);
+        alerta.setCancelable(false);
+        alerta.setPositiveButton(getResources().getString(R.string.msgReiniciar), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                zerarRespostas();
+            }
+        });
+        alerta.create().show();
+    }
+
     private void conferirEdits() {
         String respCerta;
         String respUser;
 
-        EditText texto_noruega = (EditText) findViewById(R.id.noruega_Resp);
+        EditText textoNoruega = (EditText) findViewById(R.id.noruega_Resp);
+        textoNoruega.requestFocus();
 
-        texto_noruega.requestFocus();
-
-        respUser = texto_noruega.getText().toString().toUpperCase().trim();
+        respUser = textoNoruega.getText().toString().toUpperCase().trim();
         if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.noruegaRespCerta).toUpperCase();
 
@@ -83,9 +85,9 @@ public class MainActivity extends Activity {
             }
         }
 
-        EditText texto_suecia = (EditText) findViewById(R.id.suecia_Resp);
+        EditText textoSuecia = (EditText) findViewById(R.id.suecia_Resp);
 
-        respUser = texto_suecia.getText().toString().toUpperCase().trim();
+        respUser = textoSuecia.getText().toString().toUpperCase().trim();
         if (!respUser.equals("")) {
             respCerta = getResources().getString(R.string.sueciaRespCerta).toUpperCase();
 
@@ -95,10 +97,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    /**
-     * Confere se a resposta dada no RadioButton esta correta ou não
-     * Atribui 1 ponto se estiver correta.
-     */
     private void conferirRadios() {
 
         RadioGroup mEmiradoArabes = (RadioGroup) findViewById(R.id.emiradosArabes_RadioGroup);
@@ -144,10 +142,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    /**
-     * Confere se a resposta dada no CheckBox esta correta ou não
-     * Atribui 1 ponto se estiver correta.
-     */
     private void conferirCheck() {
         CheckBox africaDoSulA = (CheckBox) findViewById(R.id.africaDoSul_RespA);
         CheckBox africaDoSulB = (CheckBox) findViewById(R.id.africaDoSul_RespB);
@@ -174,11 +168,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    /**
-     * Faz a limpeza das respostas dadas. Limpa os Edits, desmarca os RadioButton e CheckBox.
-     *
-     * @param vg é o ViewGroup(Pai) que contém os view(filhos) a serem verificados.
-     */
     private void LimparEditsChecksRadios(ViewGroup vg) {
         for (int i = 0; i < vg.getChildCount(); i++) {
 
@@ -196,10 +185,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    /**
-     * Zera o resultado final.
-     * Solicita a limpeza dos Edits, RadioButtons e CheckBoxes.
-     */
     private void zerarRespostas() {
         mCerto = 0;
 
