@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         totalDisplay = getResources().getString(R.string.msgRespostas) + "  " + String.valueOf(mCerto)
                 + getResources().getString(R.string.msgBarra) + QUANT_PERGUNTAS +
                 "\n" +
-                "\n" + PERCENT_FORMAT.format(mCerto / Double.valueOf(QUANT_PERGUNTAS)) +
+                "\n" + PERCENT_FORMAT.format(mCerto / QUANT_PERGUNTAS) +
                 "  " + getResources().getString(R.string.msgDoTotal);
 
         return totalDisplay;
