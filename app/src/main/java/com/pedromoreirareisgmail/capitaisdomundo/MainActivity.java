@@ -99,46 +99,34 @@ public class MainActivity extends Activity {
 
     private void conferirRadios() {
 
-        RadioGroup mEmiradoArabes = (RadioGroup) findViewById(R.id.emiradosArabes_RadioGroup);
-        switch (mEmiradoArabes.getCheckedRadioButtonId()) {
-            case R.id.emiradosArabes_RespC:
-                mCerto++;
-                break;
+        RadioGroup emiradoArabes = (RadioGroup) findViewById(R.id.emiradosArabes_RadioGroup);
+        if (emiradoArabes.getCheckedRadioButtonId() == R.id.emiradosArabes_RespC) {
+            mCerto++;
         }
 
-        RadioGroup mAustralia = (RadioGroup) findViewById(R.id.australia_RadioGroup);
-        switch (mAustralia.getCheckedRadioButtonId()) {
-            case R.id.australia_RespE:
-                mCerto++;
-                break;
+        RadioGroup australia = (RadioGroup) findViewById(R.id.australia_RadioGroup);
+        if (australia.getCheckedRadioButtonId() == R.id.australia_RespE) {
+            mCerto++;
         }
 
-        RadioGroup mTurquia = (RadioGroup) findViewById(R.id.turquia_RadioGroup);
-        switch (mTurquia.getCheckedRadioButtonId()) {
-            case R.id.turquia_RespB:
-                mCerto++;
-                break;
+        RadioGroup turquia = (RadioGroup) findViewById(R.id.turquia_RadioGroup);
+        if (turquia.getCheckedRadioButtonId() == R.id.turquia_RespB) {
+            mCerto++;
         }
 
-        RadioGroup mCanada = (RadioGroup) findViewById(R.id.canada_RadioGroup);
-        switch (mCanada.getCheckedRadioButtonId()) {
-            case R.id.canada_RespB:
-                mCerto++;
-                break;
+        RadioGroup canada = (RadioGroup) findViewById(R.id.canada_RadioGroup);
+        if (canada.getCheckedRadioButtonId() == R.id.canada_RespB) {
+            mCerto++;
         }
 
-        RadioGroup mBelgica = (RadioGroup) findViewById(R.id.belgica_RadioGroup);
-        switch (mBelgica.getCheckedRadioButtonId()) {
-            case R.id.belgica_RespA:
-                mCerto++;
-                break;
+        RadioGroup belgica = (RadioGroup) findViewById(R.id.belgica_RadioGroup);
+        if (belgica.getCheckedRadioButtonId() == R.id.belgica_RespA) {
+            mCerto++;
         }
 
-        RadioGroup mfranca = (RadioGroup) findViewById(R.id.franca_RadioGroup);
-        switch (mfranca.getCheckedRadioButtonId()) {
-            case R.id.franca_RespD:
-                mCerto++;
-                break;
+        RadioGroup franca = (RadioGroup) findViewById(R.id.franca_RadioGroup);
+        if (franca.getCheckedRadioButtonId() == R.id.franca_RespD) {
+            mCerto++;
         }
     }
 
