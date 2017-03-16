@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- EDIT TEXT -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Pergunta 01 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/noruegaPergunta" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <!-- Pergunta 01 -->
+                <TextView
+                    style="@style/perguntas"
+                    android:text="@string/noruegaPergunta" />
 
-    <EditText
-        android:id="@+id/noruega_Resp"
-        style="@style/edits"
-        android:hint="@string/noruegaRespDica"
-        android:imeOptions="actionDone"
-        android:inputType="text|textCapWords|textPhonetic" />
+                <EditText
+                    android:id="@+id/noruega_Resp"
+                    style="@style/edits"
+                    android:hint="@string/noruegaRespDica"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapWords|textPhonetic" />
 
-    <!-- Pergunta 02 -->
-    <TextView
-        style="@style/perguntas"
-        android:text="@string/sueciaPergunta" />
+                <!-- Pergunta 02 -->
+                <TextView
+                    style="@style/perguntas"
+                    android:text="@string/sueciaPergunta" />
 
-    <EditText
-        android:id="@+id/suecia_Resp"
-        style="@style/edits"
-        android:hint="@string/sueciaRespDica"
-        android:imeOptions="actionDone"
-        android:inputType="text|textCapWords|textPhonetic" />
-</merge>
+                <EditText
+                    android:id="@+id/suecia_Resp"
+                    style="@style/edits"
+                    android:hint="@string/sueciaRespDica"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapWords|textPhonetic" />
+        </LinearLayout>
+
+</layout>

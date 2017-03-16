@@ -1,62 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bandeiras"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/larguraPrincipal"
-    android:paddingRight="@dimen/larguraPrincipal"
-    tools:context="com.pedromoreirareisgmail.capitaisdomundo.MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/oito"
-        android:layout_marginTop="@dimen/dezeseis"
-        android:layout_weight="1"
-        card_view:cardCornerRadius="@dimen/dimensCardView"
-        card_view:cardElevation="@dimen/dimensCardView">
+        android:layout_height="match_parent"
+        android:background="@drawable/bandeiras"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/larguraPrincipal"
+        android:paddingRight="@dimen/larguraPrincipal"
+        tools:context="com.pedromoreirareisgmail.capitaisdomundo.MainActivity">
 
-        <ScrollView
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/oito"
+            android:layout_marginTop="@dimen/dezeseis"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="@dimen/dimensCardView"
+            card_view:cardElevation="@dimen/dimensCardView">
 
-            <LinearLayout
-                android:id="@+id/linear_componentes"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <include layout="@layout/layout_edit_text" />
+                <LinearLayout
+                    android:id="@+id/linear_componentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <include layout="@layout/layout_radio_button" />
+                    <include
+                        android:id="@+id/includedEdit"
+                        layout="@layout/layout_edit_text" />
 
-                <include layout="@layout/layout_check_box" />
+                    <include
+                        android:id="@+id/includedRadio"
+                        layout="@layout/layout_radio_button" />
 
-            </LinearLayout>
-        </ScrollView>
+                    <include
+                        android:id="@+id/includedCheck"
+                        layout="@layout/layout_check_box" />
+                </LinearLayout>
+            </ScrollView>
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dezeseis"
-        android:layout_weight="0"
-        card_view:cardCornerRadius="@dimen/dezeseis"
-        card_view:cardElevation="@dimen/dezeseis">
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/oito"
 
+            card_view:cardCornerRadius="@dimen/dimensCardView"
+            card_view:cardElevation="@dimen/dimensCardView">
         <Button
             android:id="@+id/but_conferir"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/oito"
             android:layout_marginLeft="@dimen/oito"
             android:layout_marginRight="@dimen/oito"
             android:layout_marginTop="@dimen/oito"
             android:background="#2979FF"
             android:text="@string/butConferir"
-            android:textColor="@android:color/white" />
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>
